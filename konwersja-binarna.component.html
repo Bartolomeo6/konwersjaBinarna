@@ -1,0 +1,19 @@
+<h1>Konwertuj liczbę binarną (=) dziesiętną</h1>
+
+<div>
+    <p>Konwersja binarna (2)</p>
+    <input type="text" name="liczbaDziesietna" [(ngModel)]="liczbaDziesietna">
+    <button (click)="konwersjaBinarna(liczbaDziesietna)">Konwertuj na binarną</button>
+    <p>Wynik: {{wynikB}}</p>
+    <button (click)="obliczIloscBlokow(wynikB)">Oblicz ilosc klocków</button>
+    <p>Ilosc blokow: {{licznikBlokow}}</p>
+</div>
+<div>
+    <p>Konwersja dziesiętna (10)</p>
+    <input type="text" name="liczbaBin" [(ngModel)]="liczbaBin">
+    <button (click)="konwersjaDziesietna(liczbaBin)">Konwertuj na dziesiętną</button>
+    <p>Wynik: {{wynikDz}}</p>
+</div>
+<div>
+    <button (click)="obliczIloscKlockowWTablicy()">Oblicz ilosc bloków</button>
+</div>
